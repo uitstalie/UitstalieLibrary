@@ -149,11 +149,9 @@ publishing {
     publications {
         register('mavenJava', MavenPublication) {
             from components.java
-        }
-    }
-    repositories {
-        maven {
-            url "file://${project.projectDir}/repo"
+            groupId 'com.uitstalie.library'
+            artifactId 'UitstalieLibrary'
+            version '1.0.0'
         }
     }
 }
